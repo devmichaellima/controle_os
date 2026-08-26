@@ -113,18 +113,20 @@ st.markdown("""
     section[data-testid="stSidebar"] {
         background: #ffffff !important;
         border-right: 1px solid #e5e7eb;
-        overflow: hidden !important;
     }
     section[data-testid="stSidebar"] [data-testid="stSidebarContent"] {
-        overflow: hidden !important;
+        overflow-y: auto !important;
         padding: 1.5rem 1rem;
     }
-    section[data-testid="stSidebar"] [data-testid="stSidebarContent"] {
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
     section[data-testid="stSidebar"] [data-testid="stSidebarContent"]::-webkit-scrollbar {
-        display: none;
+        width: 6px;
+    }
+    section[data-testid="stSidebar"] [data-testid="stSidebarContent"]::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+    }
+    section[data-testid="stSidebar"] [data-testid="stSidebarContent"]::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
     }
     section[data-testid="stSidebar"] * {
         color: #1f2937;
